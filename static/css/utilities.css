@@ -1,0 +1,104 @@
+/* fade into view */
+.fade-out.fade-in-fast {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.fade-out.fade-in-normal {
+  opacity: 1;
+  transition: opacity 1.5s;
+}
+.fade-out.fade-in-slow {
+  opacity: 1;
+  transition: opacity 2.5s;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+
+/* primary button */
+.button {
+  width: 200px;
+  height: 55px;
+  position: relative;
+  background: #444;
+  color: white;
+  font-size: 1.5rem;
+  padding: 10px 30px;
+  text-transform: capitalize;
+  transition: 0.5s;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.button span {
+  position: relative;
+  z-index: 1;
+}
+
+.button i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.button:hover {
+  letter-spacing: 0.24rem;
+  background: var(--primary-button-color);
+  color: var(--primary-button-color);
+  box-shadow: 0 0 35px var(--primary-button-color);
+}
+
+.button::before {
+  content: "";
+  inset: 2px;
+  position: absolute;
+  background: #27282c;
+}
+
+.button i::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 100%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  background: #27282c;
+  border: 2px solid var(--primary-button-color);
+  /* border-radius: 50%; */
+  transition: 0.5s;
+}
+
+.button:hover i::before {
+  left: 0;
+  transform: translateX(-50%) rotate(45deg);
+  box-shadow: 40px 39px var(--primary-button-color);
+}
+
+.button i::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 6px;
+  /* border-radius: 50%; */
+  transform: translateX(-100%);
+  width: 10px;
+  height: 10px;
+  background: #27282c;
+  border: 2px solid var(--primary-button-color);
+  transition: 0.5s;
+}
+
+.button:hover i::after {
+  left: 100%;
+  transform: translateX(-50%) rotate(-45deg);
+  box-shadow: 38px -39px var(--primary-button-color);
+}

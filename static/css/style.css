@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  --primary-button-color: rgba(31, 103, 161, 1);
+  --hero-text-spacing: 20px;
+  --sponsors-card-color: rgb(39,40,44);
+}
+body {
+  overflow-x: hidden;
+  /* global 92%+ browsers support */
+  /* background: radial-gradient(
+    circle at 80% 0%,
+    rgba(10, 21, 78, 0.6) 0%,
+    rgba(0, 0, 0, 1) 49%,
+    rgba(0, 0, 0, 1) 100%
+  ); */
+  background: radial-gradient(
+    circle at 80% 0%,
+    rgba(10, 21, 38, 0.8) 0%,
+    rgba(0, 0, 0, 1) 49%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  /* background: radial-gradient(
+    circle at 80% 0%,
+    rgba(10, 21, 48, 1) 0%,
+    rgba(0, 0, 0, 1) 49%,
+    rgba(0, 0, 0, 1) 100%
+  ); */
+}
+
+a {
+  text-decoration: none;
+}
+
+#particles-js {
+  height: 400px;  
+}
+
+section {
+  height: 100vh;
+}
