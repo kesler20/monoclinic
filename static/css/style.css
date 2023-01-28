@@ -16,18 +16,18 @@ body {
     rgba(0, 0, 0, 1) 49%,
     rgba(0, 0, 0, 1) 100%
   ); */
-  background: radial-gradient(
+  /* background: radial-gradient(
     circle at 80% 0%,
     rgba(10, 21, 38, 0.8) 0%,
     rgba(0, 0, 0, 1) 49%,
     rgba(0, 0, 0, 1) 100%
-  );
-  /* background: radial-gradient(
+  ); */
+  background: radial-gradient(
     circle at 80% 0%,
     rgba(10, 21, 48, 1) 0%,
     rgba(0, 0, 0, 1) 49%,
     rgba(0, 0, 0, 1) 100%
-  ); */
+  );
 }
 
 a {

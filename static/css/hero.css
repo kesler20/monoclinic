@@ -4,6 +4,7 @@
   padding-top: 250px;
   justify-content: space-between;
   margin: 0% 10%;
+  animation: fade-in 1.5s ease-in-out;
 }
 
 .hero .text {
