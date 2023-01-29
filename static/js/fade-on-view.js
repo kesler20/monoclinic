@@ -2,6 +2,8 @@ const sponsorsBoxElements = document.querySelectorAll(".box");
 const sponsorsIntroduction = document.querySelectorAll(
   ".sponsors-introduction"
 );
+const productElements = document.querySelectorAll(".product");
+console.log(productElements)
 
 const fadeIn = (element, fadeInPace) => {
   let rect = element.getBoundingClientRect();
@@ -22,4 +24,10 @@ window.addEventListener("scroll", () => {
   Array.from(sponsorsIntroduction).forEach((text) => {
     fadeIn(text, "fade-in-normal");
   });
+
+  Array.from(productElements).forEach((box) => {
+    fadeIn(box, "fade-in-slow");
+  });
 });
+
+

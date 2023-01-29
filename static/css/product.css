@@ -6,10 +6,15 @@
   grid-row-gap: 20px;
   padding: 0 20%;
   padding-top: 300px;
+  height: 100vh;
 }
 
 .product .text {
   color: white;
+}
+
+.product.product.fade-out .text {
+  animation: slide-in-right 3s ease-in-out;
 }
 
 .product .text h3 {
@@ -35,6 +40,10 @@
   margin: 15px;
   line-height: 1.5em;
   color: rgba(230, 230, 230, 0.7);
+}
+
+.product.fade-out .img {
+  animation: slide-in-left 3s ease-in-out;
 }
 
 .product .img img {

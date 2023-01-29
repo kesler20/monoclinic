@@ -24,7 +24,6 @@
   transition: opacity 0.5s;
 }
 
-
 /* primary button */
 .button {
   width: 200px;
@@ -110,7 +109,6 @@
   box-shadow: 38px -39px var(--primary-button-color);
 }
 
-
 .button-primary {
   display: flex;
   align-items: center;
@@ -129,4 +127,3 @@
   background-color: rgba(51, 113, 161, 1);
   cursor: pointer;
 }
-
