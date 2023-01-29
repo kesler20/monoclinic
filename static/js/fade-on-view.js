@@ -3,7 +3,12 @@ const sponsorsIntroduction = document.querySelectorAll(
   ".sponsors-introduction"
 );
 const productElements = document.querySelectorAll(".product");
-console.log(productElements)
+const productFunctionalityElements = document.querySelectorAll(
+  ".product-functionality"
+);
+const contactMeElements = document.querySelectorAll(".contact-me");
+const teamCardsElements = document.querySelectorAll(".team");
+const teamIntroduction = document.querySelectorAll(".team-introduction");
 
 const fadeIn = (element, fadeInPace) => {
   let rect = element.getBoundingClientRect();
@@ -28,6 +33,20 @@ window.addEventListener("scroll", () => {
   Array.from(productElements).forEach((box) => {
     fadeIn(box, "fade-in-slow");
   });
+
+  Array.from(productFunctionalityElements).forEach((box) => {
+    fadeIn(box, "fade-in-slow");
+  });
+
+  Array.from(contactMeElements).forEach((box) => {
+    fadeIn(box, "fade-in-slow");
+  });
+
+  Array.from(teamCardsElements).forEach((box) => {
+    fadeIn(box, "fade-in-slow");
+  });
+
+  Array.from(teamIntroduction).forEach((box) => {
+    fadeIn(box, "fade-in-slow");
+  });
 });
-
-

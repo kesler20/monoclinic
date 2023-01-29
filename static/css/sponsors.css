@@ -30,6 +30,7 @@
   padding: 60px 0;
   gap: 60px;
   height: 600px;
+  padding-bottom: 600px;
 }
 
 .sponsors .box::before {

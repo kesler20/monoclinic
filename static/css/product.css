@@ -13,8 +13,8 @@
   color: white;
 }
 
-.product.product.fade-out .text {
-  animation: slide-in-right 3s ease-in-out;
+.product.product.fade-out.fade-in-slow .text {
+  animation: slide-in-right 2s ease-in-out;
 }
 
 .product .text h3 {
@@ -42,8 +42,8 @@
   color: rgba(230, 230, 230, 0.7);
 }
 
-.product.fade-out .img {
-  animation: slide-in-left 3s ease-in-out;
+.product.fade-out.fade-in-slow .img {
+  animation: slide-in-left 2s ease-in-out;
 }
 
 .product .img img {

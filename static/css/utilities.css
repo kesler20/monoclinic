@@ -8,15 +8,15 @@
 /* fade into view */
 .fade-out.fade-in-fast {
   opacity: 1;
-  transition: opacity 0.5s;
+  transition: opacity 1s;
 }
 .fade-out.fade-in-normal {
   opacity: 1;
-  transition: opacity 1.5s;
+  transition: opacity 2s;
 }
 .fade-out.fade-in-slow {
   opacity: 1;
-  transition: opacity 2.5s;
+  transition: opacity 5s;
 }
 
 .fade-out {
