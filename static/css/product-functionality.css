@@ -10,9 +10,9 @@
   gap: 20px;
   height: 100%;
   margin-bottom: 200px;
-  background: url(../img/product-functionality.svg) no-repeat bottom;
+  /* background: url(../img/product-functionality.svg) no-repeat bottom;
   background-position-x: 70%; 
-  background-position-y: 70%; 
+  background-position-y: 70%;  */
 }
 
 .product-functionality.fade-in-slow.fade-out #item-0 {
