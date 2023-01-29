@@ -1,3 +1,26 @@
+.sponsors-introduction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sponsors-introduction h4 {
+  font-size: 2em;
+  color: white;
+}
+
+.sponsors-introduction span {
+  /* global 94%+ browsers support */
+  background: linear-gradient(
+    90deg,
+    rgba(31, 103, 161, 1) 0%,
+    rgba(31, 103, 161, 1) 50%,
+    rgba(30, 41, 78, 1) 100%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
 .sponsors {
   position: relative;
   display: flex;
@@ -95,6 +118,12 @@
   font-weight: 500;
   margin-top: 25px;
   transition: 0.5s ease-in-out;
+  width: 135px;
+  height: 45px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sponsors .box:hover .content .text a {

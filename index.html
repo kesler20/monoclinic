@@ -13,7 +13,14 @@
     <link rel="stylesheet" href="./static/css/animation.css" />
     <link rel="stylesheet" href="./static/css/utilities.css" />
     <link rel="stylesheet" href="./static/css/hero.css" />
+    <link rel="stylesheet" href="./static/css/contact-me.css" />
+    <link rel="stylesheet" href="./static/css/product.css" />
+    <link rel="stylesheet" href="./static/css/product-functionality.css" />
     <!-- Font Awesome link tag copied from cdjs.com -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/7368c40b21.js"
       crossorigin="anonymous"
@@ -36,12 +43,12 @@
         <a href="#" class="button"><span>demo</span><i></i></a>
       </ul>
     </nav>
-    <!-- hero section -->
+    <!-- hero div -->
     <div class="hero">
       <div class="text">
         <h1>
-          Unlock the <span>full potential of your data</span> with our cutting-edge Industry
-          4.0 data visualization and analytics software.
+          Unlock the <span>full potential of your data</span> with our
+          cutting-edge Industry 4.0 data visualization and analytics software.
         </h1>
         <p>
           Our state-of-the-art technology allows you to easily extract insights
@@ -49,16 +56,45 @@
           intuitive interfaces, customizable dashboards, and powerful machine
           learning capabilities.
         </p>
-        <a href="#" class="button"><span>Explore</span><i></i></a>
+        <div class="buttons">
+          <a href="#" class="button"><span>Explore</span><i></i></a>
+          <div class="button-primary">
+            <p>Explore</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 15 15"
+              width="12"
+              height="12"
+              style="margin-left: 0.33em"
+            >
+              <g
+                stroke="currentColor"
+                stroke-width="1.75"
+                fill="none"
+                fill-rule="evenodd"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M4.497 1H3a2 2 0 00-2 2v9a2 2 0 002 2h9a2 2 0 002-2v-1.5h0"
+                  opacity=".6"
+                ></path>
+                <path d="M9 1.008L14 1v5M14 1L6 9"></path>
+              </g>
+            </svg>
+          </div>
+        </div>
       </div>
       <div class="img">
-        <img src="./static/img/hero-image-2.png" alt="" srcset="" />
+        <img src="./static/img/hero-image.png" alt="" srcset="" />
       </div>
     </div>
     <!-- particles.js container -->
     <div id="particles-js"></div>
-    <!-- testimonial/ sponsors section -->
-    <h4>Trusted By Amazing Companies</h4>
+    <!-- testimonial/ sponsors div -->
+    <div class="sponsors-introduction fade-out">
+      <h4>Trusted By <span>Amazing Companies</span></h4>
+    </div>
     <div class="sponsors">
       <div class="box fade-out" style="--clr: #019237">
         <div class="content">
@@ -107,12 +143,120 @@
       </div>
     </div>
     <!-- product section -->
-    <section class="product"></section>
-    <!-- team section -->
-    <section class="team"></section>
-    <!-- contact me section -->
-    <section class="contact-me"></section>
-    <!-- footer section -->
+    <div class="product">
+      <div class="text">
+        <h3>
+          uncover insights and
+          <span> opportunities hidden within data </span>
+        </h3>
+        <p>
+          We go beyond the traditional approach leveraging big data to uncover
+          insights and patterns that may be hidden in the data. By combining the
+          power of advanced unsupervised models, with the vast amounts of data
+          available, we are able to deliver actionable insights that drive
+          real-world results for our clients. Whether it's identifying
+          inefficiencies in your operations, predicting future trends, or
+          discovering new opportunities, we can help you turn data into a
+          competitive advantage.
+        </p>
+        <div class="buttons">
+          <div class="button-primary">
+            <p>Explore</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 15 15"
+              width="12"
+              height="12"
+              style="margin-left: 0.33em"
+            >
+              <g
+                stroke="currentColor"
+                stroke-width="1.75"
+                fill="none"
+                fill-rule="evenodd"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M4.497 1H3a2 2 0 00-2 2v9a2 2 0 002 2h9a2 2 0 002-2v-1.5h0"
+                  opacity=".6"
+                ></path>
+                <path d="M9 1.008L14 1v5M14 1L6 9"></path>
+              </g>
+            </svg>
+          </div>
+          <a href="#">Schedule a demo</a>
+        </div>
+      </div>
+      <div class="img">
+        <img src="./static/img/laptop-mobile.png" alt="" srcset="" />
+      </div>
+    </div>
+    <!-- product functionality  -->
+    <div class="product-functionality">
+      <div class="cards">
+        <div id="item-0">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+            reiciendis neque magnam harum illum nesciunt quasi provident soluta
+            quas, cumque, odio minus aliquam veritatis maiores! Itaque quasi nisi
+            provident tempora!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+            reiciendis neque magnam harum illum nesciunt quasi provident soluta
+            quas, cumque, odio minus aliquam veritatis maiores! Itaque quasi nisi
+            provident tempora!
+          </p>
+        </div>
+        <div id="item-1">
+          <div class="card">
+            <h3>Data <span>Visualisation</span></h3>
+            <i class="icon-a">
+              <img src="./static/img/Brazuca - Screen 2.png" alt="" />
+            </i>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+              magni reiciendis rem. Repellendus
+            </p>
+          </div>
+        </div>
+        <div id="item-2">
+          <div class="card">
+            <h3><span>Data</span> Analytics</h3>
+            <i class="icon-b">
+              <img src="./static/img/Brazuca - UI Design.png" alt="" />
+            </i>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+              magni reiciendis rem. Repellendus
+            </p>
+          </div>
+        </div>
+
+        <div id="item-3">
+          <img src="./static/img/production_line.png" alt="" srcset="" />
+        </div>
+
+        <div id="item-4"></div>
+      </div>
+    </div>
+    <!-- contact me div -->
+    <!-- <div class="contact-me">
+      <div class="text">
+        <form action="#">
+          <h3>Find out how we can add value</h3>
+          <p>
+            Schedule a demo now to discover how our product can benefit your
+            business
+          </p>
+          <input type="email" placeholder="username@gmail.com" />
+          <button type="submit"></button>
+        </form>
+      </div>
+      <div class="img">
+        <img src="./static/img/contact-image.png" alt="" srcset="" />
+      </div>
+    </div> -->
+    <!-- footer div -->
     <footer class="footer">
       <div class="footer-container">
         <div class="row">

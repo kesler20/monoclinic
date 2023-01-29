@@ -1,0 +1,14 @@
+
+.contact-me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-me .text {
+  color: white;
+}
+
+.contact-me .img img {
+  width: 50%;
+}

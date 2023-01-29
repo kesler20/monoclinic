@@ -1,3 +1,10 @@
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 /* fade into view */
 .fade-out.fade-in-fast {
   opacity: 1;
@@ -102,3 +109,24 @@
   transform: translateX(-50%) rotate(-45deg);
   box-shadow: 38px -39px var(--primary-button-color);
 }
+
+
+.button-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 55px;
+  font-size: 0.8em;
+  border-radius: 8px;
+  padding: 10px;
+  color: rgba(230, 230, 230, 0.7);
+  background-color: rgba(31, 103, 161, 1);
+  margin: 15px;
+}
+
+.button-primary:hover {
+  background-color: rgba(51, 113, 161, 1);
+  cursor: pointer;
+}
+
