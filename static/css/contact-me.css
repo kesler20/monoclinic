@@ -2,13 +2,135 @@
 .contact-me {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 0 10%;
+  height: 100vh;
+  width: 100%;
+}
+
+.contact-me .buttons {
+  justify-content: flex-start;
+  margin: 20px 0px;
+}
+
+.contact-me .button-primary {
+  justify-content: space-evenly;
+  margin: 0px;
 }
 
 .contact-me .text {
+  padding-left: 150px;
   color: white;
+}
+
+.contact-me .img {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 150px;
 }
 
 .contact-me .img img {
   width: 50%;
+}
+
+.contact-me a {
+  color: rgba(31, 103, 161, 1);
+  font-size: 1.2em;
+  margin: 20px;
+}
+
+.contact-me .text h3 {
+  font-size: 2.5em;
+}
+
+.contact-me .text h3 span {
+  color :rgba(31, 103, 161, 1);
+}
+
+.contact-me .text p {
+  color: rgba(230, 230, 230, 0.7);
+  font-size: 1.2em;
+  margin: 20px 0px;
+}
+
+
+.contact-me .card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--sponsors-card-color);
+  border-radius: 10px;
+  padding: 20px;
+  width: 450px;
+}
+
+.contact-me .card h3 {
+  font-size: 1.5em;
+  color: white;
+  margin-left: 30px;
+}
+
+.contact-me .card h3 span {
+  color: rgba(31, 103, 161, 1);
+}
+
+.contact-me .card .icon-a {
+  color: white;
+  background-color: rgba(51, 123, 181, 1);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+.contact-me .card .icon-a:hover {
+  background-color: rgba(51, 113, 161, 1);
+  cursor: pointer;
+}
+
+.contact-me .card .icon-a img {
+  width: 100%;
+}
+
+.inputBox {
+  position: relative;
+  width: 450px;
+}
+
+.inputBox input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgba(255,255,255,0.25);
+  background-color: black;
+  border-radius: 5px;
+  outline: none;
+  color: #fff;
+  font-size: 1em;
+}
+
+.inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 1em;
+  color:rgba(255,255,255,0.25);
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span {
+  color: rgb(89,166,226);
+  transform: translateX(10px) translateY(-7px);
+  font-size: 0.65em;
+  padding: 0 10px;
+  background: #1d2b3a;
+  letter-spacing: 0.2em;
+  border-left: 1px solid rgb(89,166,226);
+  border-right: 1px solid rgb(89,166,226);
 }
