@@ -234,11 +234,23 @@ if __name__ == "__main__":
 
         elif sys.argv[1] == "create-env":
             osi.create_a_virtualenvironment(sys.argv[2])
+        
+        elif sys.argv[1] == "i":
+            osi.install_package(*sys.argv[2:])
+        
+        elif sys.argv[1] == "setup-env":
+            osi.setup_venv(*sys.argv[2:])
+        
+        elif sys.argv[1] == "del-env":
+            osi.delete_virtualenvironment(*sys.argv[2:])
+
+        elif sys.argv[1] == "ci":
+            git.test_and_push_to_github(["_dev.py","git","t",*sys.argv[2:]])
 
         else:
             # if no domain is passed this will be pushed to github
             git.push_to_github(sys.argv)
-
+        
     else:
         with open(os.path.join(osi.gcu(), "Protocol", "jaguar", "commands.txt"), "r") as f:
             for line in f.readlines():
