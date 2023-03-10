@@ -158,3 +158,9 @@
 #item-3 img {
   width: 100%;
 }
+
+@media (max-width: 1000px) {
+  .product-functionality {
+    display: none;
+  }
+}
