@@ -2,6 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  padding: 10%;
 }
 
 .sponsors-introduction h4 {
@@ -130,4 +132,11 @@
 .sponsors .box:hover .content .text a {
   background: var(--sponsors-card-color);
   color: var(--clr);
+}
+
+
+@media (max-width: 600px) {
+  .sponsors-introduction h4 {
+    text-align: center;
+  }
 }

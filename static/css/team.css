@@ -1,5 +1,5 @@
 .team-section {
-  height: 100vh;
+  height: 300vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,15 +71,16 @@
 
 .card-image img {
   height: 100%;
-  border: 1px solid white;
+  border: 7px solid white;
   border-radius: 50%;
 }
+
 
 .header {
   grid-row-start: 1;
   grid-column-start: 3;
   grid-row-end: 2;
-  grid-column-end: 6;
+  grid-column-end: 6;  
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -126,3 +127,31 @@
 }
 
 
+
+@media (max-width: 600px) {
+  .team {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background: none;
+  }
+
+  .header h3 {
+    text-align: center;
+  }
+
+  .team .card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 700px;
+    margin: 10px 0px;
+    width: 300px;
+  }
+
+  .card-image img {
+    width: 200px;
+  }
+}
