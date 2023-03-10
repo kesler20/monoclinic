@@ -137,6 +137,7 @@
 @media (max-width: 600px) {
   
   .team-section {
+    padding-top: 100vh;
     scale: 1;
     height: 300vh;
   }
