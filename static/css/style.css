@@ -7,8 +7,10 @@
   --hero-text-spacing: 20px;
   --sponsors-card-color: rgb(39,40,44);
 }
+
 body {
   overflow-x: hidden;
+  max-width: 100vw;
   /* global 92%+ browsers support */
   /* background: radial-gradient(
     circle at 80% 0%,
