@@ -141,7 +141,7 @@
 
 @media (max-width: 600px) {
   .contact-me {
-    padding: 0;
+    margin-top: 50vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -150,10 +150,7 @@
   } 
   
   .contact-me .img {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin: 0px 50px;
+    display: none;
   }
   
   .contact-me .buttons {
