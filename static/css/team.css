@@ -1,9 +1,11 @@
 .team-section {
   height: 100vh;
+  width: 95%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .team-introduction {
