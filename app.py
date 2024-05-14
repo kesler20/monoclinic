@@ -1,14 +1,35 @@
-from fastapi.responses import FileResponse
-from fastapi import FastAPI
-from fastapi.staticfiles import StaticFiles
+from flask import redirect, url_for, render_template
+from flask import Flask
 
-app = FastAPI()
+app = Flask(
+    __name__, 
+    template_folder='templates',
+    static_folder='static'
+)
 
-app.mount("/static", StaticFiles(directory="static"), name="static")
+@app.route('/')
+def home():
+    return render_template('index.html')
 
-@app.get('/')
-async def home():
-     return FileResponse("index.html")
+@app.route('/<page>/', methods=['POST','GET'])
+def show(page):
+    if page == 'login':
+        redirect(url_for('logins'))
 
+    elif page == 'account':
+        redirect(url_for('accounts'))
 
+    elif page == 'transactions':
+        redirect(url_for('transactions'))
+    
+    elif page == 'mine':
+        redirect(url_for('miners'))
 
+    elif page == 'blockchain':
+        redirect(url_for('blockchains'))
+    else:
+        pass
+    return render_template(f'{page}.html')
+
+if __name__ == '__main__':
+    app.run(debug=True, port=5500)
