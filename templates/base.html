@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- stylesheet imports -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/sponsors.css') }}"
+    />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/hero.css') }}" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/footer.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/navbar.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/animation.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/utilities.css') }}"
+    />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/hero.css') }}" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/contact-me.css') }}"
+    />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/team.css') }}" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/product.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/product-functionality.css') }}"
+    />
+    <!-- Font Awesome link tag copied from cdjs.com -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/7368c40b21.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- the logo of the website -->
+    <link
+      rel="shortcut icon"
+      href="{{ url_for('static', filename='img/favicon.ico') }}"
+      type="image/x-icon"
+    />
+    <title>{%block title %}{% endblock %}</title>
+  </head>
+  <body>
+    <!--- Navbar-->
+    <nav>
+      <div class="hamburger">
+        <div class="top line"></div>
+        <div class="midll line"></div>
+        <div class="bottm line"></div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="../about">About</a></li>
+        <li><a href="../#contact-section">Contact</a></li>
+        <a href="https://wiz.onrender.com/" class="button-primary">
+          <p>Check our demo</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 15 15"
+            width="12"
+            height="12"
+            style="margin-left: 0.33em"
+          >
+            <g
+              stroke="currentColor"
+              stroke-width="1.75"
+              fill="none"
+              fill-rule="evenodd"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M4.497 1H3a2 2 0 00-2 2v9a2 2 0 002 2h9a2 2 0 002-2v-1.5h0"
+                opacity=".6"
+              ></path>
+              <path d="M9 1.008L14 1v5M14 1L6 9"></path>
+            </g>
+          </svg>
+        </a>
+      </ul>
+    </nav>
+    {% block content %}{% endblock %}
+    <!-- footer section  -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+              <li><a href="#">about us</a></li>
+              <li><a href="#">our services</a></li>
+              <li><a href="#">privacy policy</a></li>
+              <li><a href="#">affiliate program</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">payment options</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>software features</h4>
+            <ul>
+              <li><a href="#">data visualisation</a></li>
+              <li><a href="#">process control</a></li>
+              <li><a href="#">machine learning</a></li>
+              <li><a href="#">data analysis</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- scripts -->
+    <script src="{{ url_for('static', filename='js/fade-on-view.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/particles.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/js/app.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/navbar.js') }}"></script>
+  </body>
+</html>
