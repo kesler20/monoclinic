@@ -1,3 +1,4 @@
+import os
 from fastapi import FastAPI, Request
 from fastapi.templating import Jinja2Templates
 from fastapi.responses import HTMLResponse
@@ -5,11 +6,16 @@ from fastapi.staticfiles import StaticFiles
 
 app = FastAPI()
 
+# Get the absolute path to the directory where this file is located
+dir_path = os.path.dirname(os.path.realpath(__file__))
+
 # Set up template directory
-templates = Jinja2Templates(directory="templates")
+templates = Jinja2Templates(directory=os.path.join(dir_path, "templates"))
 
 # Mount static directory
-app.mount("/static", StaticFiles(directory="static"), name="static")
+app.mount(
+    "/static", StaticFiles(directory=os.path.join(dir_path, "static")), name="static"
+)
 
 
 @app.get("/", response_class=HTMLResponse)
