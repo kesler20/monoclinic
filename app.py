@@ -13,13 +13,9 @@ def home():
 def show(route):
     page = {
         "home": "index",
-        "about": "about",
+        "product_overview": "product_overview",
+        "case_studies": "case_studies",
         "contact": "contact",
-        "services": "services",
-        "portfolio": "portfolio",
-        "blog": "blog",
-        "blog-single": "blog-single",
-        "elements": "elements",
     }.get(route, "404")
     return render_template(f"{page}.html")
 

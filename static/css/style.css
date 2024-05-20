@@ -5,7 +5,7 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   --primary-button-color: rgba(31, 103, 161, 1);
   --hero-text-spacing: 20px;
-  --sponsors-card-color: rgb(39,40,44);
+  --sponsors-card-color: rgb(39,40,44,0.3);
 }
 
 body {

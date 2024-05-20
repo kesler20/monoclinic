@@ -70,7 +70,7 @@
   position: relative;
   width: 300px;
   height: 350px;
-  background-color: var(--sponsors-card-color);
+  background-color: rgb(39, 40, 44);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -132,7 +132,6 @@
   background: var(--sponsors-card-color);
   color: var(--clr);
 }
-
 
 @media (max-width: 600px) {
   .sponsors-introduction h4 {

@@ -1,0 +1,90 @@
+{% extends 'base.html' %} {% block title %}Product Overview{% endblock %} {% block
+content %}
+<!-- hero div -->
+<div class="hero">
+  <div class="text">
+    <h1>
+      Remove <span>data siloes and tribal knowledge</span> make information and
+      insights accessible to all with Wiz
+    </h1>
+    <p>
+      Our platform makes data from manufacturing processes and other disparate
+      systems more accessible with a simple drag and drop interface and intuitive
+      workflows, data can be explored up to 5 dimensions. Wiz can also be used to
+      perform real-time monitoring and advanced analysis from a web browser.
+    </p>
+  </div>
+  <div class="img">
+    <img
+      src="{{ url_for('static', filename='img/wiz-circle.png') }}"
+      alt=""
+      srcset=""
+    />
+  </div>
+</div>
+
+<!-- product section -->
+<div class="hero">
+  <div class="text">
+    <h1>Context</h1>
+    <p>
+      In the age of big data, understanding and visualizing data is as important as
+      its collection. Dr. Peyman Z. Moghadam’s team at the University of Sheffield
+      has developed Wiz, an interactive big-data visualization tool built in Python.
+      Wiz allows users to explore data beyond static images, providing interactive
+      analysis of datasets up to 5 dimensions (5D). The web-based app combines the
+      accessibility of web applications with robust real-time data analysis
+      capabilities, making it invaluable for industries embracing digitalization,
+      IoT, and AI.
+    </p>
+  </div>
+</div>
+
+<!-- about section -->
+<div class="team-section">
+  <video width="70%" controls muted autoplay>
+    <source
+      src="../static/img/WhatsApp Video 2024-05-13 at 12.49.50.mp4"
+      type="video/mp4"
+    />
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+<!-- content section -->
+<div class="hero">
+  <div class="text">
+    <h1>
+      Deep integration with zero configuration
+      <span>You only need a browser and a problem. </span>
+      through a low-code, intuitive UI interfaces.
+    </h1>
+    <p>
+      Embracing the industry 4.0 paradigm, our solution allows frontline workers to
+      develop dashboards and other digital tools through a low-code, intuitive UI
+      interfaces. Wiz turns data into actionable insights, driving business growth
+      across industries over the next 10-20 years. As a one-stop shop for real-time
+      data analysis and visualization, Wiz is accessible to scientists and
+      non-scientists alike, requiring no coding or software downloads—just a dataset
+      and a browser. This democratizes data analysis, enabling better understanding
+      and utilization of big data to unlock its full potential.
+    </p>
+    <div class="img">
+      <video controls muted autoplay>
+        <source src="../static/img/VID-20240513-WA0002.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <p>
+      Don’t pay to train personnel use new software, buy new software that can teach
+      your employees how to digitise their workflow. Our solution enables the
+      integration of disparate models, machines and data siloes, thereby bringing a
+      unified architecture. We guide you through your digital literacy journey and
+      streamline your productivity
+    </p>
+  </div>
+</div>
+
+<section class="team-section"></section>
+
+{% endblock %}
