@@ -44,7 +44,6 @@ google-api-python-client==2.123.0
 google-auth==2.29.0
 google-auth-httplib2==0.2.0
 google-auth-oauthlib==1.2.0
--e git+https://github.com/kesler20/google_api@e05cff0e5ba7c82ddbeda5858c7f003ff12f9b89#egg=google_api
 googleapis-common-protos==1.63.0
 gunicorn==22.0.0
 h11==0.14.0
@@ -58,7 +57,6 @@ identify==2.5.24
 idna==3.4
 iniconfig==2.0.0
 itsdangerous==2.1.2
--e git+https://github.com/kesler20/jaguar.dev@531ce293bbe361854fb83d85a04be637b168a57e#egg=jaguar.dev
 Jinja2==3.1.3
 jinxed==1.2.0
 joblib==1.3.2
@@ -137,11 +135,9 @@ sentence-transformers==2.6.1
 six==1.16.0
 smmap==5.0.1
 sniffio==1.3.0
--e git+https://github.com/kesler20/sofia.git@6c22d173e38e4c1e57b5fdb0999029d99e27dc0c#egg=sofia
 sortedcontainers==2.4.0
 soupsieve==2.5
 starlette==0.37.2
--e git+https://github.com/kesler20/stdx@f491a07873c3b2dd3d58ab864de77a93ec8532e2#egg=stdx
 sympy==1.11.1
 TatSu==5.8.3
 threadpoolctl==3.4.0
