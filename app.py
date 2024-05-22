@@ -35,6 +35,7 @@ async def handle_form(request: Request, email: str = Form(...)):
 def get_email_responses():
     return FileResponse(os.path.join(dir_path, "emails.txt"))
 
+
 @app.api_route("/{route}/", methods=["POST", "GET"], response_class=HTMLResponse)
 def show(request: Request, route: str):
     page = {
