@@ -5,33 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- stylesheet imports -->
-    <link rel="stylesheet" href="{{ url_for('static', path='css/style.css') }}" />
-    <link rel="stylesheet" href="{{ url_for('static', path='css/sponsors.css') }}" />
-    <link rel="stylesheet" href="{{ url_for('static', path='css/hero.css') }}" />
-    <link rel="stylesheet" href="{{ url_for('static', path='css/footer.css') }}" />
-    <link rel="stylesheet" href="{{ url_for('static', path='css/navbar.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/style.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/sponsors.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/hero.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/footer.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/navbar.css') }}" />
     <link
       rel="stylesheet"
-      href="{{ url_for('static', path='css/animation.css') }}"
+      href="{{ url_for('static', path='/css/animation.css') }}"
     />
     <link
       rel="stylesheet"
-      href="{{ url_for('static', path='css/utilities.css') }}"
+      href="{{ url_for('static', path='/css/utilities.css') }}"
     />
-    <link rel="stylesheet" href="{{ url_for('static', path='css/hero.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/hero.css') }}" />
     <link
       rel="stylesheet"
-      href="{{ url_for('static', path='css/contact-me.css') }}"
+      href="{{ url_for('static', path='/css/contact-me.css') }}"
     />
-    <link rel="stylesheet" href="{{ url_for('static', path='css/team.css') }}" />
-    <link rel="stylesheet" href="{{ url_for('static', path='css/product.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/team.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/product.css') }}" />
     <link
       rel="stylesheet"
-      href="{{ url_for('static', path='css/product-functionality.css') }}"
+      href="{{ url_for('static', path='/css/product-functionality.css') }}"
     />
     <link
       rel="stylesheet"
-      href="{{ url_for('static', path='css/product-overview-and-case-studies.css') }}"
+      href="{{ url_for('static', path='/css/product-overview-and-case-studies.css') }}"
     />
     <!-- Font Awesome link tag copied from cdjs.com -->
     <link
@@ -45,7 +45,7 @@
     <!-- the logo of the website -->
     <link
       rel="shortcut icon"
-      href="{{ url_for('static', path='img/favicon.ico') }}"
+      href="{{ url_for('static', path='/img/favicon.ico') }}"
       type="image/x-icon"
     />
     <title>{%block title %}{% endblock %}</title>
@@ -55,7 +55,7 @@
     <nav>
       <a class="logo" href="../">
         <img
-          src="{{ url_for('static', path='img/Logo.svg') }}"
+          src="{{ url_for('static', path='/img/Logo.svg') }}"
           alt="logo"
           style="width: 200px"
         />
@@ -130,9 +130,9 @@
       </div>
     </footer>
     <!-- scripts -->
-    <script src="{{ url_for('static', path='js/fade-on-view.js') }}"></script>
-    <script src="{{ url_for('static', path='js/particles.js') }}"></script>
-    <script src="{{ url_for('static', path='js/js/app.js') }}"></script>
-    <script src="{{ url_for('static', path='js/navbar.js') }}"></script>
+    <script src="{{ url_for('static', path='/js/fade-on-view.js') }}"></script>
+    <script src="{{ url_for('static', path='/js/particles.js') }}"></script>
+    <script src="{{ url_for('static', path='/js/js/app.js') }}"></script>
+    <script src="{{ url_for('static', path='/js/navbar.js') }}"></script>
   </body>
 </html>
