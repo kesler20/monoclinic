@@ -1,5 +1,41 @@
-{% extends 'base.html' %} {% block title %}Page Not Found{% endblock %} {% block content
-%}
-<h1> Page Not Found </h1>
-<p> The page you are looking for does not exist. </p>
+{% extends 'base.html' %} {% block title %}Page Not Found{% endblock %} {% block
+content %}
+<h1></h1>
+
+<!-- hero div -->
+<div class="hero">
+  <div class="text">
+    <h1>Page Not Found</h1>
+    <p>The page you are looking for does not exist.</p>
+  </div>
+</div>
+<div style="width: 100vw; margin-left: 10%">
+  <a href="../" class="button-primary buttons">
+    <p>Back to Home Page</p>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 15 15"
+      width="12"
+      height="12"
+      style="margin-left: 1em"
+    >
+      <g
+        stroke="currentColor"
+        stroke-width="1.75"
+        fill="none"
+        fill-rule="evenodd"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path
+          d="M4.497 1H3a2 2 0 00-2 2v9a2 2 0 002 2h9a2 2 0 002-2v-1.5h0"
+          opacity=".6"
+        ></path>
+        <path d="M9 1.008L14 1v5M14 1L6 9"></path>
+      </g>
+    </svg>
+  </a>
+</div>
+
+<section class="team-section"></section>
 {% endblock %}
