@@ -3,24 +3,8 @@ from fastapi import FastAPI, Request, Form
 from fastapi.templating import Jinja2Templates
 from fastapi.responses import FileResponse, HTMLResponse
 from fastapi.staticfiles import StaticFiles
-from starlette.middleware import Middleware
-from starlette.responses import RedirectResponse
-from starlette.middleware.base import BaseHTTPMiddleware
 
 app = FastAPI()
-
-
-class HTTPSRedirectMiddleware(BaseHTTPMiddleware):
-    async def dispatch(self, request: Request, call_next):
-        if request.url.scheme != "https":
-            url = request.url.replace(scheme="https")
-            return RedirectResponse(url, status_code=301)
-        return await call_next(request)
-
-
-# Add HTTPS redirect middleware
-app.add_middleware(HTTPSRedirectMiddleware)
-
 
 # Get the absolute path to the directory where this file is located
 dir_path = os.path.dirname(os.path.realpath(__file__))
