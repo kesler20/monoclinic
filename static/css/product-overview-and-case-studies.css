@@ -1,3 +1,97 @@
+.section {
+  display: flex;
+  align-items: center;
+  padding-top: 250px;
+  justify-content: space-between;
+  margin: 0% 10%;
+  animation: fade-in 1.5s ease-in-out;
+  background: url(../img/hero-bg.png) no-repeat left;
+}
+
+.section .text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.section h1 {
+  margin: 15px;
+  font-size: 2.5em;
+  color: white;
+}
+
+.section h1 span {
+  /* global 94%+ browsers support */
+  background: linear-gradient(
+    90deg,
+    rgba(31, 103, 161, 1) 0%,
+    rgba(31, 103, 161, 1) 50%,
+    rgba(30, 41, 78, 1) 100%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-size: 200% 100%;
+  animation: shine 2s ease-in-out infinite;
+}
+
+.section p {
+  margin: 15px;
+  color: rgba(230, 230, 230, 0.7);
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.section .button {
+  margin: 15px;
+}
+
+.section .img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.section .img img {
+  width: 950px;
+  justify-content: center;
+  margin: 15px;
+}
+
+@media (max-width: 1750px) {
+  .section {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1200px) {
+  .section .img img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 950px) {
+  .section h1 {
+    margin: 10px;
+    font-size: 2em;
+  }
+
+  .section p {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+}
+
+@media (max-width: 500px) {
+  .section .img img {
+    width: 330px;
+  }
+}
+
+
 
 .functionality {
   width: 95%;
